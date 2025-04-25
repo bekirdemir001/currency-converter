@@ -1,0 +1,20 @@
+.select-container {
+    margin-bottom: 16px;
+}
+
+.select-label{
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+  
+.select-box {
+    width: 100%;
+    padding: 8px;
+    background-color: #99B1D6;
+    color: #00183D;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
