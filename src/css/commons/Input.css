@@ -5,18 +5,23 @@
 .input-label {
     display: block;
     margin-bottom: 4px;
-    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
   
 .input-field {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    background-color: #99B1D6;
-    color: #00183D;
+    background-color: #ccd8eb;
+    color: #000c1f;
     border-radius: 4px;
     border: none;
     outline: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .input-field.placeholder{

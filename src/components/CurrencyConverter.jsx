@@ -1,19 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Input from './customs/Input.jsx'
 import Select from './customs/Select.jsx'
 import Button from './customs/Button.jsx'
-import Card from './customs/Card.jsx'
 import "../css/CurrencyConverter.css"
 import "../utils/constants/currencies.js"
 import currencies from '../utils/constants/currencies.js'
 import { getCurrency } from '../services/currencyService.js'
+import ResultCard from './ResultCard.jsx'
 
 
 function CurrencyConverter() {
     const [amount, setAmount] = useState(1)
     const [baseCurrency, setBaseCurrency] = useState("USD")
     const [targetCurrency, setTargetCurrency] = useState("EUR")
+    const [rate, setRate] = useState(0)
     const [result, setResult] = useState(null)
+
+    const [convertedAmount, setConvertedAmount] = useState(0);
+    const [convertedBaseCurrency, setConvertedBaseCurrency] = useState("");
+    const [convertedTargetCurrency, setConvertedTargetCurrency] = useState("");
 
     const handleChangeAmount = (e) => {
       setAmount(e.target.value)
@@ -29,12 +34,18 @@ function CurrencyConverter() {
 
     const handleClick = (e) => {
       fetchData()
+
+      setConvertedAmount(amount);
+      setConvertedBaseCurrency(baseCurrency);
+      setConvertedTargetCurrency(targetCurrency);
     }
 
     const fetchData = async () => {
       try {
         const response = await getCurrency(baseCurrency, targetCurrency);
-        setResult(response)
+        const calculatedValue = Number((response*amount).toFixed(2))
+        setResult(calculatedValue)
+        setRate(response)
       } catch (error) {
         console.error("Error: ", error)
       }
@@ -68,12 +79,11 @@ function CurrencyConverter() {
         {
           result ? 
           (
-            <Card
-              header={`${amount} ${baseCurrency} =`}
-              footer={`1 ${baseCurrency} = ${result} ${targetCurrency}`}
-            >
-              <p>{`${Number((result*amount).toFixed(2))} ${targetCurrency}`} </p>
-            </Card>
+            <ResultCard 
+              header={`${convertedAmount} ${convertedBaseCurrency} =`}
+              footer={`1 ${convertedBaseCurrency} = ${rate} ${convertedTargetCurrency}`}
+              result={`${result} ${convertedTargetCurrency}`}
+            />
           )
           : 
           null
