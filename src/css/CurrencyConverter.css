@@ -1,14 +1,7 @@
 .currency{
     width: auto;
     height: auto;
-    background-color: #E6ECF5;
+    background-color: #ccdde6;
     padding: 16px;
     border-radius: 16px;
-}
-
-.currency h1{
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    margin: 20px;
 }

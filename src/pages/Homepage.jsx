@@ -1,7 +1,7 @@
 import React from "react"
 import CurrencyConverter from "../components/CurrencyConverter.jsx"
 
-function Homepage () {
+function HomePage () {
 
     return (
         <div>
@@ -10,4 +10,4 @@ function Homepage () {
     )
 }
 
-export default Homepage
+export default HomePage

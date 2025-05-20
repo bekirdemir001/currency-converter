@@ -7,8 +7,8 @@
     margin-bottom: 16px;
     border: none;
     border-radius: 8px;
-    background-color: #001f4d;
-    color: #e6ecf5;
+    background-color:  #002233; /* Primary color Dark60 */
+    color:#ccdde6; /* Primary color Light80 */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

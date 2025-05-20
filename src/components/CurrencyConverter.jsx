@@ -53,7 +53,6 @@ function CurrencyConverter() {
 
   return (
     <div className="currency">
-        <h1>Currency Converter</h1>
         <Input
             label = "Amount"
             name = "amount"

@@ -8,14 +8,15 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    color: #00111a; /* Primary color Dark80 */
 }
   
 .input-field {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    background-color: #ccd8eb;
-    color: #000c1f;
+    background-color: #99bbcc; /* Primary color Light60 */
+    color: #00111a; /* Primary color Dark80 */
     border-radius: 4px;
     border: none;
     outline: none;
