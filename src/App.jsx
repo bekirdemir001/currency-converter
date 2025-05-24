@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from "./pages/HomePage.jsx"
 import AboutPage from "./pages/AboutPage.jsx"
@@ -7,11 +7,12 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App () {
+  const[theme, setTheme] = useState('light');
 
   return (
     <Router>
-      <div className="app-container">
-        <Header/>
+      <div className={`container ${theme}`}>
+        <Header theme={theme} setTheme={setTheme}/>
           <main className="content">
             <Routes>
               <Route path="/currency-converter/" element={<HomePage />} />

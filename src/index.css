@@ -5,7 +5,7 @@ body{
   height: 100%;
 }
 
-.app-container {
+.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -17,4 +17,16 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/************** Light Mode **************/
+.container.light {
+  background: #ccdde6; /* Primary color Light80 */
+  transition: 0.8s;
+}
+
+/************** Dark Mode **************/
+.container.dark {
+  background: #00111a;  /* Primary color Dark80 */
+  transition: 0.8s;
 }

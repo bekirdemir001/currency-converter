@@ -1,8 +1,9 @@
 import React from 'react'
+import "../css/ContactPage.css"
 
 function ContactPage() {
   return (
-    <div>This page is under development!</div>
+    <p className='contact-page-text'>This page is under development!</p>
   )
 }
 

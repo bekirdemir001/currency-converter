@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../css/commons/Card.css"
+import "../../css/customs/Card.css"
 
 function Card({ header, children, footer }) {
   return (

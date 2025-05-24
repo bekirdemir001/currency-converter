@@ -3,30 +3,83 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
-    background-color: #005580; /* Primary color */
-    color: #ccdde6; /* Primary color Light80 */
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     position: relative;
+}
+
+.header-right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
 /* Nav (default: horizontal) */
 .nav {
     display: flex;
     gap: 16px;
+    align-items: center;
 }
 
 .header-link {
     text-decoration: none;
     font-size: 16px;
-    color: #ccdde6; /* Primary color Light80 */
+}
+
+.toggle{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
 
 /* Hamburger icon (hidden by default) */
 .hamburger {
     display: none;
-    font-size: 24px;
     cursor: pointer;
+    height: 24px;
+}
+
+.hamburger-menu{
+    width: 24px;
+    height: 24px;
+}
+
+/************** Light Mode **************/
+.light header {
+    background: #00111a;    /* Primary color Dark80 */
+    transition: 0.8s;
+}
+
+.light h4 {
+    color: #ccdde6;    /* Primary color Light80 */;
+}
+
+.light .header-link {
+    color: #ccdde6;    /* Primary color Light80 */;
+}
+
+.light .nav.open {
+    background-color: #002233; /* Primary color Dark60*/
+    border-top: 1px solid #99bbcc;  /* Primary color Light60 */
+}
+
+/************** Dark Mode **************/
+.dark header {
+    background: #ccdde6;    /* Primary color Light80 */
+    transition: 0.8s;
+}
+
+.dark h4 {
+    color: #00111a;    /* Primary color Dark80 */
+}
+
+.dark .header-link {
+    color: #00111a;    /* Primary color Dark80 */
+}
+
+.dark .nav.open {
+    background-color: #99bbcc; /* Primary color Light60*/
+    border-top: 1px solid #002233;  /* Primary color Dark60 */
 }
 
 /* Responsive for mobile */
@@ -34,6 +87,7 @@
     .hamburger {
         display: block;
         z-index: 2;
+        align-items: center;
     }
 
     .nav {
@@ -41,11 +95,9 @@
         top: 100%;
         right: 0;
         left: 0;
-        background-color: aliceblue;
         flex-direction: column;
         display: none;
         padding: 10px 16px;
-        border-top: 1px solid #ccc;
         z-index: 1;
     }
 

@@ -1,0 +1,12 @@
+/************** Light Mode **************/
+.light .contact-page-text {
+   
+    color: #00111a; /* Primary color Light80 */
+    transition: 0.8s;
+}
+
+/************** Dark Mode **************/
+.dark .contact-page-text {
+    color: #ccdde6; /* Primary color Dark80 */
+    transition: 0.8s;
+}
