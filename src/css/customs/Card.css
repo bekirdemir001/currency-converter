@@ -1,6 +1,4 @@
 .card-container {
-    background-color: #99bbcc; /* Primary color Light60 */
-    color: #00111a; /* Primary color Dark80 */
     border-radius: 8px;
     padding: 16px 8px;
 }
@@ -22,4 +20,28 @@
 .card-footer {
     font-size: 16px;
     text-align: right;
+}
+
+/************** Light Mode **************/
+.light .card-container {
+    background-color: #99afcd; /* Primary color Light60 */
+    color: #001634; /* Primary color Dark60 */
+    transition: 0.8s;
+}
+
+.light .card-content {
+    color: #60122e; /* Secondary color Dark60 */
+    transition: 0.8s;
+}
+
+/************** Dark Mode **************/
+.dark .card-container {
+    background-color: #000b1a; /* Primary color Dark80 */
+    color: #ccd7e6; /* Primary color Light80 */
+    transition: 0.8s;
+}
+
+.dark .card-content {
+    color: #8f1b45; /* Secondary color Dark40 */
+    transition: 0.8s;
 }

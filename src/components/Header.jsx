@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import "../css/Header.css"
 import darkModeIcon from "../assets/darkModeIcon.svg"
 import lightModeIcon from "../assets/lightModeIcon.svg"
-import menuDarkIcon from "../assets/menuDarkIcon.svg"
-import menuLightIcon from "../assets/menuLightIcon.svg"
+import menuIcon from "../assets/menuIcon.svg"
 
 function Header({theme, setTheme}) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,7 +35,7 @@ function Header({theme, setTheme}) {
         {/* Hamburger icon */}
         <div className="hamburger" onClick={toggleMenu}>
           <img 
-            src={theme == 'light' ? menuDarkIcon : menuLightIcon}
+            src={menuIcon}
             alt="Menu Icon Not Found" 
             className='hamburger-menu'
           />

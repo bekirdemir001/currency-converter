@@ -21,12 +21,12 @@ body{
 
 /************** Light Mode **************/
 .container.light {
-  background: #ccdde6; /* Primary color Light80 */
+  background: #e6ebf3; /* Primary color Light90 */
   transition: 0.8s;
 }
 
 /************** Dark Mode **************/
 .container.dark {
-  background: #00111a;  /* Primary color Dark80 */
+  background: #00050d;  /* Primary color Dark90 */
   transition: 0.8s;
 }

@@ -7,12 +7,23 @@
     margin-bottom: 16px;
     border: none;
     border-radius: 8px;
-    background-color:  #002233; /* Primary color Dark60 */
-    color:#ccdde6; /* Primary color Light80 */
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: #fdeaf1; /* Primary color Light80 */
 }
   
 .custom-button:hover {
     opacity: 0.9;
+}
+
+/************** Light Mode **************/
+.light .custom-button {
+    background-color: #ef2d73; /* Secondary color */
+    transition: 0.8s;
+}
+
+/************** Dark Mode **************/
+.dark .custom-button {
+    background-color: #8f1b45; /* Secondary color Dark40 */
+    transition: 0.8s;
 }

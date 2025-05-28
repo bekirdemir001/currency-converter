@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from "./pages/HomePage.jsx"
 import AboutPage from "./pages/AboutPage.jsx"
@@ -7,7 +7,12 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App () {
-  const[theme, setTheme] = useState('light');
+  const currentTheme = localStorage.getItem("currencyTheme");
+  const[theme, setTheme] = useState(currentTheme ? currentTheme : "light");
+
+  useEffect(() => {
+    localStorage.setItem("currencyTheme", theme);
+  },[theme])
 
   return (
     <Router>

@@ -1,7 +1,18 @@
 .currency{
     width: auto;
     height: auto;
-    background-color: #ccdde6;
     padding: 16px;
     border-radius: 16px;
+}
+
+/************** Light Mode **************/
+.light .currency {
+    background-color: #ccd7e6;  /* Primary color Light80 */
+    transition: 0.8s;
+}
+
+/************** Dark Mode **************/
+.dark .currency {
+    background: #001634;    /* Primary color Dark60 */
+    transition: 0.8s;
 }

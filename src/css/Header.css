@@ -46,40 +46,40 @@
 
 /************** Light Mode **************/
 .light header {
-    background: #00111a;    /* Primary color Dark80 */
+    background: #013682;    /* Primary color */
     transition: 0.8s;
 }
 
 .light h4 {
-    color: #ccdde6;    /* Primary color Light80 */;
+    color: #e6ebf3;    /* Primary color Light90 */;
 }
 
 .light .header-link {
-    color: #ccdde6;    /* Primary color Light80 */;
+    color: #e6ebf3;    /* Primary color Light90 */;
 }
 
 .light .nav.open {
-    background-color: #002233; /* Primary color Dark60*/
-    border-top: 1px solid #99bbcc;  /* Primary color Light60 */
+    background-color: #012b68; /* Primary color Dark20*/
+    border-top: 1px solid #e6ebf3;  /* Primary color Light90 */
 }
 
 /************** Dark Mode **************/
 .dark header {
-    background: #ccdde6;    /* Primary color Light80 */
+    background: #001634;    /* Primary color Dark60 */
     transition: 0.8s;
 }
 
 .dark h4 {
-    color: #00111a;    /* Primary color Dark80 */
+    color: #e6ebf3;    /* Primary color Light90 */
 }
 
 .dark .header-link {
-    color: #00111a;    /* Primary color Dark80 */
+    color: #e6ebf3;    /* Primary color Light90 */
 }
 
 .dark .nav.open {
-    background-color: #99bbcc; /* Primary color Light60*/
-    border-top: 1px solid #002233;  /* Primary color Dark60 */
+    background-color: #000b1a; /* Primary color Dark80*/
+    border-top: 1px solid #e6ebf3;  /* Primary color Light90 */
 }
 
 /* Responsive for mobile */
