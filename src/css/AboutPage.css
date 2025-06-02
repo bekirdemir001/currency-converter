@@ -1,12 +1,46 @@
+.about-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+.about-container h2,
+.about-container h3 {
+  margin-top: 1.5rem;
+}
+
+.about-container a {
+  color: #013682;    /* Primary color */
+  text-decoration: none;
+}
+
+.about-container a:hover {
+  text-decoration: underline;
+}
+
+.about-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-container li::before {
+  content: '•';
+  color: #013682;    /* Primary color */
+  margin-right: 8px;
+}
+
+
 /************** Light Mode **************/
-.light .about-page-text {
+.light .about-container {
    
     color: #00111a; /* Primary color Light80 */
     transition: 0.8s;
 }
 
 /************** Dark Mode **************/
-.dark .about-page-text {
+.dark .about-container {
     color: #ccdde6; /* Primary color Dark80 */
     transition: 0.8s;
 }

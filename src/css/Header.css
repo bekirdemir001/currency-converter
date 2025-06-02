@@ -46,7 +46,7 @@
 
 /************** Light Mode **************/
 .light header {
-    background: #013682;    /* Primary color */
+    background-color: #013682;    /* Primary color */
     transition: 0.8s;
 }
 
@@ -65,7 +65,7 @@
 
 /************** Dark Mode **************/
 .dark header {
-    background: #001634;    /* Primary color Dark60 */
+    background-color: #001634;    /* Primary color Dark60 */
     transition: 0.8s;
 }
 

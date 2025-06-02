@@ -14,6 +14,7 @@ function Header({theme, setTheme}) {
 
   const toggle_mode = () => {
     theme == 'light' ? setTheme('dark') : setTheme('light');
+    
   }
 
   return (

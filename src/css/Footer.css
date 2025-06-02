@@ -8,14 +8,14 @@
 
 /************** Light Mode **************/
 .light footer {
-    background: #013682;    /* Primary color */
+    background-color: #013682;    /* Primary color */
     color: #e6ebf3;    /* Primary color Light90 */;
     transition: 0.8s;
 }
 
 /************** Dark Mode **************/
 .dark footer {
-    background: #001634;    /* Primary color Dark60 */
+    background-color: #001634;    /* Primary color Dark60 */
     color: #e6ebf3;    /* Primary color Light90 */
     transition: 0.8s;
 }
